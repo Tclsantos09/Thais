@@ -2,6 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<script> 
+		function deExemplo() 
+			{
+   			document.getElementById("exemplo").innerHTML = "Mentira.";
+			}
+		</script>
+		
 	</head>
 	<body>
 		<h3>Formulário</h3>
@@ -25,5 +32,17 @@
 				<button type="submit"> Salvar </button>
 			</div>
 		</form>
+		
+			<form id="f1">
+			<div>
+			<br>
+				<p id="exemplo">Palmeiras tem mundial.</p>
+			<br>
+			</div>
+			
+			<div>
+				<button type="button" onclick="deExemplo()">Aperte para confirmar</button>
+			</div>
+			</form>
 	</body>
 </html>
