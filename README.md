@@ -1,34 +1,31 @@
 # Thais
 <html>
 	<head>
+		<title>Formulário</title>	
 		<script> </script>
-		<meta charset = "utf-8">
+		<meta charset="utf-8">
 	</head>
 	<body>
-		<form id ="9-03 asp.asp" action="9-03 asp.asp" method="POST">
-			<%
-				for i = 0 to 9
-					Response.Write("Valor: <input type=""text"" name=" & i & "><br>")
-				Next
-			%>
-			<button type="submit"> salvar </button>
+		<h3>Formulário</h3>
+		<form action="new 1.asp" method="GET">
+			<div>
+				<label> Nome: </label>
+				<input type="nome" id="nome" name="nome"/> <br>
+			</div>
+			<br>
+			<div>
+				<label> Email: </label>
+				<input type="email" id="email" name="email"/> <br>
+			</div>
+			<br>
+			<div>
+				<label> Data: </label>
+				<input type="date" id="data" name="data"/> <br>
+			</div>
+			<br>
+			<div>
+				<button type="submit"> Salvar </button>
+			</div>
 		</form>
 	</body>
 </html>
-	
-Response.Write(Request(i))
-	
-	Dim vet(9)
-	OMaior = 0
-		For i = 0 to 9
-			vet(i) = CLng(Request(i))
-			n = vet(i)
-				For j = 0 to 9
-					If n > vet(j) Then
-						If n > OMaior Then
-							OMaior = n
-						End if
-                    End if
-                Next
-		Next
-	Response.Write("Maior numero: " & OMaior)
