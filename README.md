@@ -1,11 +1,17 @@
 # Thais
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title> Meu Site </title>
-  </head>
-  <body>
-  </body>
+	<head>
+		<script> </script>
+		<meta charset = "utf-8">
+	</head>
+	<body>
+		<form id ="asp.asp" action="asp.asp" method="POST">
+			<%
+				for i = 0 to 9
+					Response.Write("Valor: <input type=""text"" name=" & i & "><br>")
+				Next
+			%>
+			<button type="submit"> salvar </button>
+		</form>
+	</body>
 </html>
-$ git add <\\desenvolvimento\c$\inetpub\wwwroot\Sistemas - Copy\thais> 
