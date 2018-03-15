@@ -1,8 +1,6 @@
 # Thais
 <html>
 	<head>
-		<title>Formulário</title>	
-		<script> </script>
 		<meta charset="utf-8">
 	</head>
 	<body>
